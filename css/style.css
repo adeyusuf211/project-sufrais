@@ -89,9 +89,10 @@
   margin-left: 150px;
 }
 
-.dropdown-list {
+.sidebar-dropdown {
   display: flex;
   padding-left: 25px;
+  position: relative;
 }
 
 .main {
@@ -367,10 +368,11 @@ nav svg {
   color: var(--main-blue);
 }
 
-.card-grid-2 {
+.grid-card-2 {
   display: flex;
   justify-content: space-between;
   margin: 20px 10px;
+  flex-wrap: wrap;
 }
 
 .simple-card {
@@ -391,6 +393,7 @@ nav svg {
   flex-direction: column;
   padding: 40px;
   background: white;
+  margin-top: 20px;
 }
 
 .card-image img {
@@ -401,6 +404,10 @@ nav svg {
 
 .br-5 {
   border-radius: 5px;
+}
+
+.br-10 {
+  border-radius: 10px;
 }
 
 .card-image h3 {
@@ -432,6 +439,66 @@ nav svg {
 
 .card-image button:hover {
   box-shadow: 0 0 0;
+}
+
+.card-testimonial {
+  display: flex;
+  width: 49%;
+  flex-direction: column;
+  padding: 40px;
+  background: white;
+  margin-top: 20px;
+  height: 100%;
+  background: var(--dark-red);
+  color: white;
+}
+
+.card-testimonial img {
+  width: 100px;
+  display: flex;
+  margin: 0 auto;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.card-testimonial h3,
+h5 {
+  text-align: center;
+}
+
+.card-testimonial h3 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.card-testimonial h5 {
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.card-testimonial p {
+  font-style: italic;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+svg {
+  cursor: pointer;
+}
+
+.dropdown-list {
+  display: flex;
+  padding: 25px;
+  background: red;
 }
 
 .footer {
