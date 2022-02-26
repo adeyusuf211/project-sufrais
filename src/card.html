@@ -26,12 +26,27 @@
                                 <path
                                     d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
                             </svg>
-                            <a href="">Component</a>
+                            <a href="">Custom Component</a>
                         </li>
                         <div class="sidebar-dropdown">
                             <ul>
                                 <li>
-                                    <a href="card.html">Card</a>
+                                    <a href="card.html">Cards</a>
+                                </li>
+                                <li>
+                                    <a href="card.html">Buttons</a>
+                                </li>
+                                <li>
+                                    <a href="card.html">Alerts</a>
+                                </li>
+                                <li>
+                                    <a href="card.html">Tabs</a>
+                                </li>
+                                <li>
+                                    <a href="card.html">Carousel</a>
+                                </li>
+                                <li>
+                                    <a href="card.html">Notifications</a>
                                 </li>
                             </ul>
                         </div>
@@ -93,35 +108,101 @@
                     <div class="sub-header">
                         <h4>Component / <a href="card.html">Card</a></h4>
                     </div>
-                </div>
-                <div class="grid-card-2">
+                </div> 
+                <div class="grid grid-2fr-1fr">
                     <div class="simple-card br-10">
-                        <h3>Simple Card</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, quae.</p>
+                        <h3 class="font-weight-500 margin-bottom-5">The Simple Card</h3>
+                        <p class="font-weight-400">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque aliquid velit voluptates iste sed minima cum necessitatibus culpa amet nulla!</p>
                     </div>
                     <div class="simple-card br-10">
-                        <div class="card-header">
-                            <h3>Simple Card 2</h3>
+                        <div class="flex justify-between">
+                            <h3 class="font-weight-500 margin-bottom-5">The Simple Card</h3>
                             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
                                 <path d="M0 0h24v24H0V0z" fill="none" />
                                 <path
-                                    d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
+                                    d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5v-3h3.56c.69 1.19 1.97 2 3.45 2s2.75-.81 3.45-2H19v3zm0-5h-4.99c0 1.1-.9 2-2 2s-2-.9-2-2H5V5h14v9z" />
                             </svg>
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, quae.</p>
+                        <p class="font-weight-400">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
                     </div>
-                    <div class="card-image br-10">
-                        <img src="/img/undraw_fast_car_p-4-cu.svg" alt="">
-                        <h3>The Title</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis veniam molestiae quas, eum saepe fugiat odit
-                            accusamus alias nesciunt aperiam.</p>
-                        <button>Visit</button>
+                </div>
+                <div class="grid grid-3-1fr">
+                    <div class="simple-card br-10">
+                        <img src="/img/undraw_fast_car_p-4-cu.svg" alt="#" class="img">
+                        <h3 class="font-weight-500 margin-bottom-5">The Simple Card</h3>
+                        <p class="font-weight-400">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque aliquid velit voluptates iste sed minima cum necessitatibus culpa amet nulla!</p>
+                        <button class="button border-none bg-dark-red color-white">Read More</button>
                     </div>
-                    <div class="card-testimonial br-10">
-                        <img src="/img/undraw_fast_car_p-4-cu.svg" alt="">
-                        <h3>The Name</h3>
-                        <h5>Your Title</h5>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas ipsum eos sunt error modi laborum reiciendis accusantium reprehenderit, sit similique.</p>
+                    <div class="simple-card br-10 text-center">
+                        <img src="/img/undraw_fast_car_p-4-cu.svg" alt="#" class="img">
+                        <h3 class="font-weight-500 margin-bottom-5">The Simple Card</h3>
+                        <p class="font-weight-400">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque aliquid velit voluptates iste sed minima cum
+                        necessitatibus culpa amet nulla!</p>
+                        <button class="button border-none gradient-dark-blue color-white">Read More</button>
+                    </div>
+                    <div class="simple-card br-10 text-right">
+                        <img src="/img/undraw_fast_car_p-4-cu.svg" alt="#" class="img">
+                        <h3 class="font-weight-500 margin-bottom-5">The Simple Card</h3>
+                        <p class="font-weight-400">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque aliquid velit voluptates iste sed minima cum necessitatibus culpa amet nulla!</p>
+                        <button class="button border-none bg-dark-purple color-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"
+                                class="fill-white margin-right-10">
+                                <path d="M0 0h24v24H0V0z" fill="none" />
+                                <path
+                                    d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+                            </svg>
+                            Read More
+                        </button>
+                    </div>
+                </div>
+                <div class="grid grid-3-1fr">
+                    <div class="simple-card br-10 relative">
+                        <img src="/img/undraw_fast_car_p-4-cu.svg" alt="#" class="img relative">
+                        <div class="title height-100 flex flex-column justify-end">
+                            <h3 class="font-weight-500 margin-bottom-2">The Simple Card</h3>
+                            <p class="font-weight-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda cumque, possimus pariatur ullam numquam consequatur. Natus molestias odit asperiores minus.</p>
+                        </div>
+                    </div>
+                    <div class="simple-card br-10 relative">
+                        <img src="/img/undraw_fast_car_p-4-cu.svg" alt="#" class="img relative">
+                        <div class="title height-100 flex flex-column justify-center">
+                            <h3 class="font-weight-500 margin-bottom-2">The Simple Card</h3>
+                            <p class="font-weight-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, nisi illum! Vero iste repellat earum provident ab fugiat adipisci modi?</p>
+                        </div>
+                    </div>
+                    <div class="simple-card br-10 relative">
+                        <img src="/img/undraw_fast_car_p-4-cu.svg" alt="#" class="img relative">
+                        <div class="title height-100">
+                            <h3 class="font-weight-500 margin-bottom-2">The Simple Card</h3>
+                            <p class="font-weight-400">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi ex ratione fugit culpa officiis, quas omnis animi non illo modi.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-2-1fr">
+                    <div class="simple-card br-10">
+                        <p class="font-weight-400 margin-bottom-5 italic">"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi ex ratione fugit culpa officiis, quas omnis animi non illo modi."</p>
+                        <div class="flex align-center">
+                            <div class="w-50 flex">
+                                <img src="/img/undraw_fast_car_p-4-cu.svg" alt="">
+                            </div>
+                            <div class="margin-left-10">
+                                <h4 class="font-weight-500">Name</h4>
+                                <h4 class="font-weight-700">Manager</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="simple-card br-10">
+                        <div class="flex align-center">
+                            <div class="w-50 flex">
+                                <img src="/img/undraw_fast_car_p-4-cu.svg" alt="">
+                            </div>
+                            <div class="margin-bottom-5 margin-left-10">
+                                <h4 class="font-weight-500">Name</h4>
+                                <h4 class="font-weight-700">Manager</h4>
+                            </div>
+                        </div>
+                        <p class="font-weight-400 margin-bottom-5 italic">"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi ex
+                            ratione fugit culpa officiis, quas omnis animi non illo modi."</p>
                     </div>
                 </div>
             </div>
