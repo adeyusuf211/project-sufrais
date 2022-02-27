@@ -764,10 +764,83 @@ nav svg {
   border-radius: 50px;
 }
 
+.alert {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  padding: 0;
+  position: fixed;
+  opacity: 0;
+}
+
+.alert-top-right {
+  top: 0;
+  right: 0;
+}
+
+.slide-top-right {
+  animation: alertSlide 1s ease forwards;
+}
+
+.alert-top-center {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slide-top-center {
+  animation: alertSlide 1s ease forwards;
+}
+
+.alert-top-left {
+  top: 0;
+  left: 0;
+}
+
+.slide-top-left {
+  animation: alertSlide 1s ease forwards;
+}
+
+.alert-bottom-right {
+  bottom: 0;
+  right: 0;
+}
+
+.slide-bottom-right {
+  animation: alertSlide 1s ease forwards;
+}
+
+.alert-center-bottom {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slide-center-bottom {
+  animation: alertSlide 1s ease forwards;
+}
+
+.alert-bottom-left {
+  bottom: 0;
+  left: 0;
+}
+
+.slide-bottom-left {
+  animation: alertSlide 1s ease forwards;
+}
+
+@keyframes alertSlide {
+  to {
+    opacity: 1;
+    width: 30%;
+    padding: 20px;
+    margin: 10px;
+  }
+}
+
 .simple-card {
   margin: 10px;
   padding: 20px;
-  background: white;
   transition: 0.5s all;
 }
 
