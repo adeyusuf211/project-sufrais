@@ -1,4 +1,4 @@
-# SUFRAISE | TEMPLATE ADMIN DASHBOARD
+# SUFRAIS | TEMPLATE ADMIN DASHBOARD
 
 Ini adalah sebuah repositori yang menampung sebuah template admin dashboard yang bernama _sufrais_ yang dibuat dengan
 menggunakan teknologi `HTML`, `CSS`, dan `Javascript`.
