@@ -8,9 +8,34 @@
 //     });
 // });
 
-const links = document.querySelectorAll('.sidebar-link ul li a');
-links.forEach(link => {
-    link.addEventListener('click', e => e.preventDefault());
+const email         = document.querySelector('[data-attr="email"]');
+const smallEmail    = document.querySelector('.small-email');
+
+smallEmail.style.display = "none";
+
+email.addEventListener('input', function() {
+    if(email.value.includes('@')) {
+        email.style.border          = "1px solid blue";
+        smallEmail.style.display    = 'none';
+    } else {
+        email.style.border          = "1px solid red";
+        smallEmail.style.display    = 'flex';
+    }
+});
+
+const password  = document.querySelector('[data-attr="password"]');
+const smallPass = document.querySelector('.small-password');
+
+smallPass.style.display = "none";
+
+password.addEventListener('input', function() {
+    if(password.value.length >= 8) {
+        password.style.border   = "1px solid blue";
+        smallPass.style.display = 'none';
+    } else {
+        password.style.border   = "1px solid red";
+        smallPass.style.display = 'flex';
+    }
 });
 
 const toggle = document.getElementById('toggle');
@@ -35,56 +60,66 @@ badges.forEach(badge => {
     }
 });
 
-const alertTopRightID       = document.getElementById('alert-top-right');
-const alertTopRightClass    = document.querySelector('.alert-top-right');
-alertTopRightID.addEventListener('click', () => {
-    alertTopRightClass.classList.add('slide-top-right');
+const toastrTopRightID       = document.getElementById('toastr-top-right');
+const toastrTopRightClass    = document.querySelector('.toastr-top-right');
+toastrTopRightID.addEventListener('click', () => {
+    toastrTopRightClass.classList.add('slide-top-right');
     setTimeout(() => {
-        alertTopRightClass.classList.remove('slide-top-right');
+        toastrTopRightClass.classList.remove('slide-top-right');
     }, 5000);
 });
 
-const alertTopCenterID      = document.getElementById('alert-top-center');
-const alertTopCenterClass   = document.querySelector('.alert-top-center');
-alertTopCenterID.addEventListener('click', () => {
-    alertTopCenterClass.classList.add('slide-top-center');
+const toastrTopCenterID      = document.getElementById('toastr-top-center');
+const toastrTopCenterClass   = document.querySelector('.toastr-top-center');
+toastrTopCenterID.addEventListener('click', () => {
+    toastrTopCenterClass.classList.add('slide-top-center');
     setTimeout(() => {
-        alertTopCenterClass.classList.remove('slide-top-center');
+        toastrTopCenterClass.classList.remove('slide-top-center');
     }, 5000);
 });
 
-const alertTopLeftID        = document.getElementById('alert-top-left');
-const alertTopLeftClass     = document.querySelector('.alert-top-left');
-alertTopLeftID.addEventListener('click', () => {
-    alertTopLeftClass.classList.add('slide-top-left');
+const toastrTopLeftID        = document.getElementById('toastr-top-left');
+const toastrTopLeftClass     = document.querySelector('.toastr-top-left');
+toastrTopLeftID.addEventListener('click', () => {
+    toastrTopLeftClass.classList.add('slide-top-left');
     setTimeout(() => {
-        alertTopLeftClass.classList.remove('slide-top-left');
+        toastrTopLeftClass.classList.remove('slide-top-left');
     }, 5000);
 });
 
-const alertBottomRightID     = document.getElementById('alert-bottom-right');
-const alertBottomRightClass  = document.querySelector('.alert-bottom-right');
-alertBottomRightID.addEventListener('click', () => {
-    alertBottomRightClass.classList.add('slide-bottom-right');
+const toastrBottomRightID     = document.getElementById('toastr-bottom-right');
+const toastrBottomRightClass  = document.querySelector('.toastr-bottom-right');
+toastrBottomRightID.addEventListener('click', () => {
+    toastrBottomRightClass.classList.add('slide-bottom-right');
     setTimeout(() => {
-        alertBottomRightClass.classList.remove('slide-bottom-right');
+        toastrBottomRightClass.classList.remove('slide-bottom-right');
     }, 5000);
 });
 
-const alertCenterBottomID     = document.getElementById('alert-center-bottom');
-const alertCenterBottomClass  = document.querySelector('.alert-center-bottom');
-alertCenterBottomID.addEventListener('click', () => {
-    alertCenterBottomClass.classList.add('slide-center-bottom');
+const toastrCenterBottomID     = document.getElementById('toastr-center-bottom');
+const toastrCenterBottomClass  = document.querySelector('.toastr-center-bottom');
+toastrCenterBottomID.addEventListener('click', () => {
+    toastrCenterBottomClass.classList.add('slide-center-bottom');
     setTimeout(() => {
-        alertCenterBottomClass.classList.remove('slide-center-bottom');
+        toastrCenterBottomClass.classList.remove('slide-center-bottom');
     }, 5000);
 });
 
-const alertBottomLeftID     = document.getElementById('alert-bottom-left');
-const alertBottomLeftClass  = document.querySelector('.alert-bottom-left');
-alertBottomLeftID.addEventListener('click', () => {
-    alertBottomLeftClass.classList.add('slide-bottom-left');
+const toastrBottomLeftID     = document.getElementById('toastr-bottom-left');
+const toastrBottomLeftClass  = document.querySelector('.toastr-bottom-left');
+toastrBottomLeftID.addEventListener('click', () => {
+    toastrBottomLeftClass.classList.add('slide-bottom-left');
     setTimeout(() => {
-        alertBottomLeftClass.classList.remove('slide-bottom-left');
+        toastrBottomLeftClass.classList.remove('slide-bottom-left');
     }, 5000);
 });
+
+// const notificationID        = document.getElementById('notification');
+// const notificationClass     = document.querySelector('.notification');
+
+// notificationID.addEventListener('click', () => {
+//     notificationClass.classList.add('notif-add');
+//     setTimeout(() => {
+//         notificationClass.classList.remove('notif-add');
+//     }, 5000); 
+// });
